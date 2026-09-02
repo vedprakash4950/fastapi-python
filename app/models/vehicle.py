@@ -18,6 +18,9 @@ class Vehicle(Base):
     inventory_status = Column(String(191), nullable=True)
     current_status = Column(String(255), nullable=True)
 
+    created_date = Column(DateTime, nullable=False)
+
     created_at = Column(DateTime, nullable=True)
     updated_at = Column(DateTime, nullable=True)
     deleted_at = Column(DateTime, nullable=True)
+    main_image = Column(String(255), nullable=True)
